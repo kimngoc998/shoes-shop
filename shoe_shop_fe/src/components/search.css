@@ -1,0 +1,27 @@
+
+.search-bar {
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 200;
+    width: 140px;
+    height: 30px;
+    /* border: navajowhite; */
+    background-color: #ffffff;
+}
+
+.search-bar.active {
+    display: block;
+    margin: 10px 0 0 30px;
+}
+
+#search-button{
+    font-size: 18px;
+    margin: 0 18px 0 -24px;
+}
+
+
+@media (max-width:940px) {
+    .item{
+        display: none;
+    }
+}   

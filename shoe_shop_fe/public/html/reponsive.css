@@ -1,0 +1,129 @@
+:root{
+    --primary-color:#fea08d;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --boder-color:#dbdbdb;
+}
+
+/* Responsive */
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_down-left-mobile{
+    display: block;
+    margin-left: auto;
+}
+
+.icon-timelint{
+    display: none;
+    width: 120px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.icon-timelint .fa-bars{
+    font-size: 28px;
+}
+
+.menu-ul-mobile{
+    background-color: #fff;
+    border: 1px solid #000;
+    display: none;
+    list-style: none;
+}
+
+.subnav-mobile a {
+    line-height: 1.6;
+    color: #000;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.subnav-mobile{
+    padding: 0;
+    display: none;
+    left: 165px;
+    min-width: 140px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    text-align: start;
+    line-height: 2;
+}
+
+.subnav-mobile li {
+    position: relative;
+    padding: 10px;
+    list-style: none;
+}
+
+.subnav-mobile>li:hover {
+    background-color: #d8d8d8;
+}
+
+li:hover .subnav-mobile {
+    display: block;
+}
+
+.header_down-center-mobile{
+    
+}
+
+.header_down-menu-mobile{
+
+}
+
+.header_down-menu-home-mobile,
+.header_down-menu-pages-mobile,
+.header_down-menu-pages-mobile,
+.header_down-menu-products-mobile,
+.header_down-menu-blog-mobile{
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+/* PC */
+@media only screen and(min-width: 1024px){
+    
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 940px){
+    .header_down-center{
+        display: none;
+    }
+
+    .header_down-left{
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .header_down .menu-ul-mobile:hover{
+        display: block;
+    }
+
+    .icon-timelint{
+        display: block;
+    }
+}

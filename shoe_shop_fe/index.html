@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tìm kiếm</title>
+  <style>
+    .search-bar {
+      display: none;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <button id="search-button" onclick="toggleSearchBar()">Tìm kiếm</button>
+  <input type="text" class="search-bar" id="search-bar" placeholder="Nhập từ khóa tìm kiếm">
+
+  <script>
+    function toggleSearchBar() {
+      var searchBar = document.getElementById("search-bar");
+      searchBar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

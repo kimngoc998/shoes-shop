@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    padding: 0;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 100%;
+    /* max-width: 1020px; */
+  }
+  h1{
+    text-align: center;
+    margin-top: 120px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+  }
+  .cartSection{
+    width: 80%;
+  }
+  .checkoutTable{
+    width: 100%;
+    text-align: left;
+    border-spacing: 0px;
+  }
+  .checkoutTable tr{
+    /* background-color: #ededed; */
+    margin: 10px 10px;
+  }
+
+  table#checkoutTable tr:nth-child(even) {
+    background-color: #fff;
+    }
+    table#checkoutTable tr:nth-child(odd) {
+    background-color:#ededed;
+    }
+
+
+  .checkoutTable td{
+    /* padding:0px; */
+    font-size: 16px;
+  }
+
+  .td-img{
+    width: 15%;
+  }
+  .checkoutTable img{
+    width: 90%;
+    margin: 5%;
+  }
+
+  .td-product{
+    width: 60%;
+    margin: 5%;
+  }
+  .td-product p{
+    margin: auto;
+  }
+
+  .td-cart{
+    width: 10%;
+  }
+
+  .td-SubTotal{
+    width: 15%;
+  }
+
+
+  .productSubTotal{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .checkoutSection{
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .checkoutSection div{
+    margin: 10px 7px;
+  }
+  .checkoutSection button{
+    font-size: 22px;
+    background-color: #000000;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 13px 40px;
+    text-align: center;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .grandTotal{
+    font-size: 42px;
+    font-weight: bold;
+  }
+  .nothingInCart{
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .freeShipping{
+    font-weight: bold;
+    color: forestgreen;
+  }
+  .noShipping{
+    color: brown;
+    font-weight: bold;
+  }
+
+.addToCart{
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout : none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+  .subtractBtn{
+    background-color: #000000;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-right: 7px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .addBtn{
+    background-color: #000102;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-left: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  button:hover,
+  span:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.text-green{
+  color: rgb(25, 102, 25);
+}

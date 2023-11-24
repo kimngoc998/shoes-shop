@@ -1,0 +1,119 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: #ebebeb;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+.login-box .mess-Log p {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box .eye-icon {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+input:focus{
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #0072a7;
+    font-size: 12px;
+}
+
+.login-box input[type="submit"] {
+    display: inline-block;
+    background: #03a9f4;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-box input[type="submit"]:hover {
+    background: #007bff;;
+}
+
+.login-box  p{
+    color: black;
+    margin-top: 0px;
+}
+
+.login-box  a{
+    color:  #004792;
+}
+
+
+

@@ -1,0 +1,11 @@
+.exclamation {
+    font-size: 1.1rem;
+  }
+
+  .exclamation:hover .exclamation-icon{
+    color: red;
+  }
+.exclamation:hover a {
+    color: blue;
+    text-decoration: underline;
+  }
