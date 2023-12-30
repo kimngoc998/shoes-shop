@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./login.css"
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from '../../../../redux/apiRequest';
-import { useDispatch } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faEye , faEyeSlash} from '@fortawesome/free-solid-svg-icons';
 
@@ -16,6 +16,7 @@ const Login = () => {
   const [error, setError] = useState(false);
   const [mes, setMes] = useState("");
   // const [IsLoggedIn, setIsLoggedIn] = useState(false);
+  
 
   
     const handleSubmit = async (e) => {
@@ -25,11 +26,15 @@ const Login = () => {
         password : password  
       };
       const Logg = await loginUser(newUser, dispatch);
-      if(Logg){
+      if(Logg.success){
         setMes(newUser.username +" Đăng nhập thành công!");
         setError(true);
         // setIsLoggedIn(true);
-        setTimeout(() =>navigate("/"),500);
+        if(Logg.isAdmin){
+          setTimeout(() =>navigate("/PageAdmin/"),500);
+        }else{
+          setTimeout(() =>navigate("/"),500);
+        }
       }else{
         setMes("Tên đăng nhập hoặc mật khẩu không đúng");
         setError(true);

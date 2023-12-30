@@ -5,18 +5,17 @@ import { loginFailed, loginStart, loginSuccess,
         logOutFailed,logOutStart,logOutSuccess, 
         registerStart, registerSuccess, registerFailed } from "./authSlice";
 
-
-export const loginUser = async(user, dispatch) =>{
-    dispatch(loginStart());
-    try {
-        const res = await axios.post(`${process.env.REACT_APP_API_URL}auth/login`, user);
-        dispatch(loginSuccess(res.data));
-        return true;
-    } catch (error) {
-        dispatch(loginFailed());
-        return false;
-    }
-};
+        export const loginUser = async (user, dispatch) => {
+            dispatch(loginStart());
+            try {
+              const res = await axios.post(`${process.env.REACT_APP_API_URL}auth/login`, user);
+              dispatch(loginSuccess(res.data));
+              return { success: true, isAdmin: res.data.isAdmin };
+            } catch (error) {
+              dispatch(loginFailed());
+              return { success: false };
+            }
+          };
 
 export const logOut = async(dispatch,Navigate) =>{
     dispatch(logOutStart());
